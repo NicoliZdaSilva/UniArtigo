@@ -148,10 +148,4 @@ Contribuições são bem-vindas! Siga o fluxo:
 
 ---
 
-## 📄 Licença
-
-Este projeto está licenciado sob a licença [MIT](LICENSE).
-
----
-
 **Desenvolvido para a Universidade do Estado de Santa Catarina (CEAVI) | Junho de 2025**
