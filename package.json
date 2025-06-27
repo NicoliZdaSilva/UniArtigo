@@ -1,0 +1,17 @@
+{
+  "name": "uniartigo-web",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint --fix ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.13"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}

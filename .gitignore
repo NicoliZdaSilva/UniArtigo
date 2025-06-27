@@ -1,0 +1,24 @@
+# Dependências do Node
+node_modules/
+yarn.lock
+
+# Build/output gerados (caso utilize)
+dist/
+build/
+
+# Arquivos de configuração locais
+.env
+.vscode/
+
+# Code Editor / Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Gerados pelo Tailwind ou PostCSS
+*.css.map
+*.postcss.*
+
+# Ignorar logs e caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
