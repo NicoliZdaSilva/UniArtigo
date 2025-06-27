@@ -121,28 +121,55 @@ Contribuições são bem-vindas! Siga o fluxo:
 1. Crie uma branch para sua tarefa/funcionalidade:
 
    ```bash
-   git checkout -b feat/nome-da-funcionalidade
+   git checkout -b feat/login
    ```
 
-2. Faça o commit das suas alterações claros e objetivos:
+2. Realize as alterações, então:
+
+   ```bash
+   git status
+   ```
+
+3. Deve aparecer os arquivos alterados, algo como:
+
+   ```bash
+   Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+          modified: login.html
+   ```
+
+4. Agora deve adicionar os arquivos que deseja comitar:
+
+   ```bash
+   git add login.html
+   ```
+
+   - Ou adicionar todos da seguinte forma
+
+   ```bash
+   git add .
+   ```
+
+5. Após tudo isso faça o commit das suas alterações claros e objetivos:
 
    ```bash
    git commit -m 'feat: adicionar tela de login'
    ```
 
-3. Faça o push da branch:
+6. Faça o push da branch:
 
    ```bash
-   git push orig  in feat/nome-da-funcionalidade
+   git push origin feat/login
    ```
 
-4. Abra um Pull Request para revisão:
+7. Abra um Pull Request para revisão:
    - **Acesse o repositório no GitHub em seu navegador.**
    - O GitHub geralmente exibe um banner sugerindo:
    - **“Compare & pull request”**
    - Clique nele, ou:
    - Vá até a aba **“Pull requests”** e clique em **“New pull request”**.
-   - Selecione a branch de origem (feat/nome-da-funcionalidade) e a branch de destino (develop).
+   - Selecione a branch de origem (feat/login) e a branch de destino (master).
    - Adicione um título e descrição (explique o que mudou).
    - Clique em **“Create pull request”**.
 
