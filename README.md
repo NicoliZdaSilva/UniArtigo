@@ -118,30 +118,25 @@ Para acelerar seu fluxo de trabalho e garantir código de alta qualidade:
 
 Contribuições são bem-vindas! Siga o fluxo:
 
-1. Crie uma branch (`git checkout -b feat/nova-funcionalidade`)
-2. Faça o commit das suas alterações (`git commit -m 'feat: nova funcionalidade'`)
-3. Faça o push da branch (`git push origin feat/nova-funcionalidade`)
-4. Abra um Pull Request
-
-5. Crie uma branch para sua tarefa/funcionalidade:
+1. Crie uma branch para sua tarefa/funcionalidade:
 
    ```bash
    git checkout -b feat/nome-da-funcionalidade
    ```
 
-6. Faça o commit das suas alterações claros e objetivos:
+2. Faça o commit das suas alterações claros e objetivos:
 
    ```bash
    git commit -m 'feat: adicionar tela de login'
    ```
 
-7. Faça o push da branch:
+3. Faça o push da branch:
 
    ```bash
    git push orig  in feat/nome-da-funcionalidade
    ```
 
-8. Abra um Pull Request para revisão:
+4. Abra um Pull Request para revisão:
    - **Acesse o repositório no GitHub em seu navegador.**
    - O GitHub geralmente exibe um banner sugerindo:
    - **“Compare & pull request”**
