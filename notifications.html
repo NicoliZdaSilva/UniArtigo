@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br" class="h-full bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notificações UniArtigo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="flex h-full">
+    <!-- Sidebar -->
+    <aside
+      class="fixed left-0 top-0 flex h-screen w-64 flex-col justify-between bg-[#F2F2F2] text-black"
+    >
+      <div>
+        <div class="flex h-20 items-center justify-center bg-[#6A8B97]">
+          <img src="img/UniArtigo.svg" alt="UniArtigo Logo" class="h-9" />
+        </div>
+        <div class="mt-[35px] px-4">
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Pesquisar"
+              class="w-full rounded-lg border border-[#DBDBDB] bg-[#F5F5F5] py-3 pl-10 pr-3 text-[#6A8B97] placeholder-[#6A8B97] focus:outline-none focus:ring-0"
+            />
+            <img
+              src="img/search.svg"
+              alt="Pesquisar"
+              class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2"
+            />
+          </div>
+        </div>
+        <nav class="mt-[35px] px-4">
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="flex items-center text-black hover:text-[#6A8B97]"
+              >
+                <img src="img/home.svg" alt="" class="mr-3 h-5 w-5" />
+                Início
+              </a>
+            </li>
+            <li class="mt-5">
+              <a
+                href="#"
+                class="flex items-center text-black hover:text-[#6A8B97]"
+              >
+                <img src="img/message.svg" alt="" class="mr-3 h-5 w-5" />
+                Mensagens
+              </a>
+            </li>
+            <li class="mt-5">
+              <a
+                href="#"
+                class="flex items-center text-[#6A8B97] hover:text-[#6A8B97]"
+              >
+                <img src="img/notifications.svg" alt="" class="mr-3 h-5 w-5" />
+                Notificações
+              </a>
+            </li>
+            <li class="mt-5">
+              <a
+                href="#"
+                class="flex items-center text-black hover:text-[#6A8B97]"
+              >
+                <img src="img/save.svg" alt="" class="mr-3 h-5 w-5" />
+                Salvos
+              </a>
+            </li>
+            <li class="mt-5">
+              <a
+                href="#"
+                class="flex items-center text-black hover:text-[#6A8B97]"
+              >
+                <img src="img/person.svg" alt="" class="mr-3 h-5 w-5" />
+                Meu Perfil
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <div class="mt-5 px-4">
+          <a
+            href="#"
+            class="flex h-14 items-center justify-center rounded-2xl border border-transparent bg-[#6A8B97] px-4 py-2 text-white hover:border-[#6A8B97] hover:bg-[#DBDBDB] hover:text-[#6A8B97]"
+          >
+            <img src="img/add.svg" alt="" class="mr-2 h-5 w-5" />
+            Publicar Novo
+          </a>
+        </div>
+        <hr class="mt-5 border-t border-[#CCCCCC] px-4" />
+        <div class="px-4 pb-4">
+          <a
+            href="#"
+            class="mt-4 flex items-center text-black hover:text-[#6A8B97]"
+          >
+            <img src="img/logout.svg" alt="" class="mr-2 h-5 w-5" />
+            Sair
+          </a>
+          <p class="mt-4 text-center text-xs text-gray-500">
+            Desenvolvido por New System ®
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8"></main>
+  </body>
+</html>
