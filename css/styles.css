@@ -35,11 +35,21 @@ h2{
   font-size: 40px!important;
 }
 
-.imagem{
-  width: 20%;
-  margin-left: 16%;
-  margin-top: -5.5%;
+.imagem_base{
+  width: 35%;
+  height:auto;
 }
+
+.imagem_sobreposta{
+	position: absolute;
+	bottom:-0!important;
+  top: -100;
+	right: 0;
+	width:50%;
+	height: auto;
+	z-index: 1;
+}
+
 .elemento1{
   height: 10px;
   width: 5px; 
@@ -51,15 +61,21 @@ h2{
   background-color: #628a96;
   color: white;
   padding: 1%;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   z-index: -1;
-  display: flex;
+  flex-shrink: 0;
+  position: absolute;
+  width:100%;
+  align-self: flex-start;
 }
+
 
 .imagem-footer{
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  position: relative;
+  flex-wrap: wrap-reverse;
 }
 
