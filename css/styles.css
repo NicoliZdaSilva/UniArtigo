@@ -4,19 +4,13 @@ html, body {
 }
 
 .container {
-  width: 30% !important;
+  width: 31% !important;
   height: auto;
   flex-direction: column;
   gap: 5px; 
   justify-content: left;
   align-items: left;
   flex-wrap: initial;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
 }
 
 .texto{
@@ -26,56 +20,56 @@ html, body {
 }
 
 h1{
-  padding-top: 20%;
-  font-size: 60px!important;
-  padding-bottom: 7%;
+  padding-top: 10%;
+  font-size: 30px!important;
+  padding-bottom: 5%;
 }
 
 h2{
-  font-size: 40px!important;
+  font-size: 20px!important;
+  padding-bottom: 10%;
 }
-
-.imagem_base{
-  width: 35%;
-  height:auto;
-}
-
-.imagem_sobreposta{
-	position: absolute;
-	bottom:-0!important;
-  top: -100;
-	right: 0;
-	width:50%;
-	height: auto;
-	z-index: 1;
-}
-
-.elemento1{
-  height: 10px;
-  width: 5px; 
-}
-.elemento2{
-  width: 10%;
-}
-.footer {
-  background-color: #628a96;
-  color: white;
-  padding: 1%;
-  text-align: left;
-  font-weight: bold;
-  z-index: -1;
-  flex-shrink: 0;
+ /* container fixa tudo no canto direito-embaixo */
+.background-shapes {
   position: absolute;
-  width:100%;
-  align-self: flex-start;
+  bottom: 0;
+  right: 0;
+  width: 50%;     /* ajusta à sua necessidade */
+  height: auto;
+  pointer-events: none;
 }
 
+/* regras comuns às duas shapes */
+.background-shapes img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
 
-.imagem-footer{
+/* a verde (fundo1.png) fica atrás */
+.background-shapes .shape-1 {
+  z-index: 0;
+  width: 50%;;
+}
+
+/* a branca (fundo2.png) sobrepõe */
+.background-shapes .shape-2 {
+  z-index: 1;
+  width: 80%;
+}
+.heading {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: relative;
-  flex-wrap: wrap-reverse;
+  align-items: center;   /* centra verticalmente texto + imagem */
+  gap: 0.5rem;           /* espaço entre texto e imagem */
+  padding-top: 20%;
+  font-size: 30px!important;
+  padding-bottom: 7%;
 }
 
+.imagem {
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+}
