@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-full bg-white">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizar Artigo - UniArtigo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+</head>
+<body class="flex h-screen">
+
+  <div id="sidebar-container"></div>
+
+  <main class="flex-1 overflow-y-auto p-8">
+    <div class="w-full">
+        
+        <article class="space-y-4 text-gray-700">
+            <p>The integration of AI in education is revolutionizing traditional teaching and learning paradigms. AI-powered tools can analyze student performance data to tailor learning paths, providing customized content and feedback. For instance, adaptive learning platforms adjust the difficulty of exercises based on individual student progress, ensuring optimal challenge and engagement. AI tutors offer personalized support, answering questions and providing explanations in real-time, mimicking the interaction with a human instructor. Furthermore, AI is automating administrative tasks, such as grading and scheduling, freeing up educators' time to focus on student interaction and curriculum development. However, the widespread adoption of AI in education raises important ethical considerations. Issues of data privacy, algorithmic bias, and the potential displacement of educators need careful attention. Ensuring equitable access to AI-powered educational resources is also crucial to avoid exacerbating existing inequalities. The future of education will likely involve a hybrid model, where AI tools augment, rather than replace, human educators, creating a more dynamic and effective learning environment.</p>
+        </article>
+
+        <div class="mt-6 flex justify-end border-b border-gray-200 pb-6">
+            <div class="text-right">
+                <p class="font-semibold text-gray-800">Dr. Eleanor Vance</p>
+                <p class="text-sm text-gray-500">Publicado em 22/03/2017</p>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <button class="rounded-md bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-600">Escrever um comentário</button>
+            <form class="mt-4 flex flex-col items-end">
+                <textarea 
+                    rows="4" 
+                    class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="Escreva seu comentário aqui..."
+                ></textarea>
+                <button 
+                    type="submit" 
+                    class="mt-3 rounded-lg bg-[#6A8B97] px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-[#587481]"
+                >
+                    Publicar
+                </button>
+            </form>
+        </div>
+
+        <div class="mt-10 space-y-8 border-t border-gray-200 pt-8">
+            <div class="flex items-start space-x-4">
+                <img src="../img/user1.svg" alt="Avatar de Robert Fox" class="h-10 w-10 rounded-full">
+                <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-gray-900">Robert Fox</h3>
+                        <span class="text-sm text-gray-500">February 3, 2022</span>
+                    </div>
+                    <p class="mt-1 text-gray-700">Scelerisque varius morbi enim nunc. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Elit ut aliquam purus sit amet luctus. Aliquam etiam erat velit scelerisque in.</p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+                <img src="../img/user2.svg" alt="Avatar de Savannah Nguyen" class="h-10 w-10 rounded-full">
+                <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-gray-900">Savannah Nguyen</h3>
+                        <span class="text-sm text-gray-500">February 3, 2022</span>
+                    </div>
+                    <p class="mt-1 text-gray-700">Orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut.</p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+                <img src="../img/user3.svg" alt="Avatar de Kathryn Murphy" class="h-10 w-10 rounded-full">
+                <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-gray-900">Kathryn Murphy</h3>
+                        <span class="text-sm text-gray-500">February 3, 2022</span>
+                    </div>
+                    <p class="mt-1 text-gray-700">Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
