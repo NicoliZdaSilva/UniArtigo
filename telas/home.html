@@ -14,7 +14,49 @@
     <div class="flex flex-grow">
         <main class="flex-grow h-screen overflow-y-auto p-6 md:p-12 lg:px-20 max-w-3xl mx-auto space-y-8">
 
-                    <!-- Card de artigo -->
+                    <!-- Card de artigo: que vai para a visualização-->
+
+                    <article class="border border-slate-400 rounded-2xl p-5 shadow-sm" aria-labelledby="article1-title">
+                        <header class="flex items-center gap-3 mb-3">
+                            <div class=" avatar-group flex flex-row -space-x-2" aria-label="Autores do artigo">
+                                <img src="../img/user6.svg" alt="Foto redonda do João Carlos, homem negro, camiseta branca, fundo marrom suave." 
+                                class=" w-10 h-10 rounded-full object-cover" />
+                            </div>
+                            <a href="viewArticle.html" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
+                                The Impact of Artificial Intelligence on Education
+                            </a>
+                        </header>
+                        <section>
+                            <p class="italic font-semibold mb-2">Abstract:</p>
+                            <p class="text-base leading-relaxed">
+                                This paper explores the transformative impact of artificial intelligence (AI) on the education sector. It examines how AI technologies, such as machine learning and natural language processing, are being integrated into various aspects of education, from personalized learning experiences to automated administrative tasks...
+                            </p>
+                        </section>
+                        <footer class="flex justify-between mt-6 text-slate-500" aria-label="Ações do artigo">
+                            <label class="group inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/like.svg" class="w-5 h-5 mr-1 peer-checked:hidden" alt="Likes">
+                                <img src="../img/like_fill.svg" class="hidden w-5 h-5 mr-1 peer-checked:inline" alt="Likes">
+                                <p>123</p>
+                            </label>
+                            <button aria-label="Comentários do artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/comment.svg" alt="comentar">
+                                <p>23</p>
+                            </button>
+                            <button aria-label="Compartilhar artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/share.svg" alt="compartilhar">
+                                <p>55</p>
+                            </button>
+                            <label class="cursor-pointer inline-flex items-center">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/save.svg" alt="Salvar artigo" class="peer-checked:hidden" />
+                                <img src="../img/save_fill.svg" alt="Artigo salvo" class="hidden peer-checked:inline" />
+                                <p>123</p>
+                            </label>
+                        </footer>
+                    </article>
+
+                    <!-- Cards de exemplo-->
                     <article class="border border-slate-400 rounded-2xl p-5 shadow-sm" aria-labelledby="article1-title">
                         <header class="flex items-center gap-3 mb-3">
                             <div class=" avatar-group flex flex-row -space-x-2" aria-label="Autores do artigo">
@@ -25,9 +67,9 @@
                                 <img src="../img/user3.svg" alt="Foto redonda da Laura Dias, mulher branca com cabelo castanho claro, fundo cinza azulado." 
                                 class=" w-10 h-10 rounded-full object-cover" />
                             </div>
-                            <p id="article1-title" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
+                            <a href="#" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas lectus...
-                            </p>
+                            </a>
                         </header>
                         <section>
                             <p class="italic font-semibold mb-2">Abstract:</p>
@@ -38,18 +80,26 @@
                             </p>
                         </section>
                         <footer class="flex justify-between mt-6 text-slate-500" aria-label="Ações do artigo">
-                            <button aria-label="Curtir artigo" class="rounded-full p-1">
-                                <img src="../img/like.svg" alt="">
+                            <label class="group inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/like.svg" class="w-5 h-5 mr-1 peer-checked:hidden" alt="Likes">
+                                <img src="../img/like_fill.svg" class="hidden w-5 h-5 mr-1 peer-checked:inline" alt="Likes">
+                                <p>123</p>
+                            </label>
+                            <button aria-label="Comentários do artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/comment.svg" alt="comentar">
+                                <p>23</p>
                             </button>
-                            <button aria-label="Comentários do artigo" class="rounded-full p-1">
-                                <img src="../img/comment.svg" alt="">
+                            <button aria-label="Compartilhar artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/share.svg" alt="compartilhar">
+                                <p>55</p>
                             </button>
-                            <button aria-label="Compartilhar artigo" class="rounded-full p-1">
-                                <img src="../img/share.svg" alt="">
-                            </button>
-                            <button aria-label="Salvar artigo" class="rounded-full p-1">
-                                <img src="../img/save.svg" alt="">
-                            </button>
+                            <label class="cursor-pointer inline-flex items-center">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/save.svg" alt="Salvar artigo" class="peer-checked:hidden" />
+                                <img src="../img/save_fill.svg" alt="Artigo salvo" class="hidden peer-checked:inline" />
+                                <p>123</p>
+                            </label>
                         </footer>
                     </article>
 
@@ -63,9 +113,9 @@
                                 <img src="../img/user3.svg" alt="Foto redonda da Laura Dias, mulher branca com cabelo castanho claro, fundo cinza azulado." 
                                 class=" w-10 h-10 rounded-full object-cover" />
                             </div>
-                            <p id="article2-title" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
+                            <a href="#" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas lectus...
-                            </p>
+                            </a>
                         </header>
                         <section>
                             <p class="italic font-semibold mb-2">Abstract:</p>
@@ -76,18 +126,26 @@
                             </p>
                         </section>
                         <footer class="flex justify-between mt-6 text-slate-500" aria-label="Ações do artigo">
-                            <button aria-label="Curtir artigo" class="rounded-full p-1">
-                                <img src="../img/like.svg" alt="">
+                            <label class="group inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/like.svg" class="w-5 h-5 mr-1 peer-checked:hidden" alt="Likes">
+                                <img src="../img/like_fill.svg" class="hidden w-5 h-5 mr-1 peer-checked:inline" alt="Likes">
+                                <p>123</p>
+                            </label>
+                            <button aria-label="Comentários do artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/comment.svg" alt="comentar">
+                                <p>23</p>
                             </button>
-                            <button aria-label="Comentários do artigo" class="rounded-full p-1">
-                                <img src="../img/comment.svg" alt="">
+                            <button aria-label="Compartilhar artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/share.svg" alt="compartilhar">
+                                <p>55</p>
                             </button>
-                            <button aria-label="Compartilhar artigo" class="rounded-full p-1">
-                                <img src="../img/share.svg" alt="">
-                            </button>
-                            <button aria-label="Salvar artigo" class="rounded-full p-1">
-                                <img src="../img/save.svg" alt="">
-                            </button>
+                            <label class="cursor-pointer inline-flex items-center">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/save.svg" alt="Salvar artigo" class="peer-checked:hidden" />
+                                <img src="../img/save_fill.svg" alt="Artigo salvo" class="hidden peer-checked:inline" />
+                                <p>123</p>
+                            </label>
                         </footer>
                     </article>
 
@@ -101,9 +159,9 @@
                                 <img src="../img/user3.svg" alt="Foto redonda da Laura Dias, mulher branca com cabelo castanho claro, fundo cinza azulado." 
                                 class=" w-10 h-10 rounded-full object-cover" />
                             </div>
-                            <p id="article3-title" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
+                            <a href="#" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas lectus...
-                            </p>
+                            </a>
                         </header>
                         <section>
                             <p class="italic font-semibold mb-2">Abstract:</p>
@@ -114,18 +172,26 @@
                             </p>
                         </section>
                         <footer class="flex justify-between mt-6 text-slate-500" aria-label="Ações do artigo">
-                            <button aria-label="Curtir artigo" class="rounded-full p-1">
-                                <img src="../img/like.svg" alt="">
+                            <label class="group inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/like.svg" class="w-5 h-5 mr-1 peer-checked:hidden" alt="Likes">
+                                <img src="../img/like_fill.svg" class="hidden w-5 h-5 mr-1 peer-checked:inline" alt="Likes">
+                                <p>123</p>
+                            </label>
+                            <button aria-label="Comentários do artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/comment.svg" alt="comentar">
+                                <p>23</p>
                             </button>
-                            <button aria-label="Comentários do artigo" class="rounded-full p-1">
-                                <img src="../img/comment.svg" alt="">
+                            <button aria-label="Compartilhar artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/share.svg" alt="compartilhar">
+                                <p>55</p>
                             </button>
-                            <button aria-label="Compartilhar artigo" class="rounded-full p-1">
-                                <img src="../img/share.svg" alt="">
-                            </button>
-                            <button aria-label="Salvar artigo" class="rounded-full p-1">
-                                <img src="../img/save.svg" alt="">
-                            </button>
+                            <label class="cursor-pointer inline-flex items-center">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/save.svg" alt="Salvar artigo" class="peer-checked:hidden" />
+                                <img src="../img/save_fill.svg" alt="Artigo salvo" class="hidden peer-checked:inline" />
+                                <p>123</p>
+                            </label>
                         </footer>
                     </article>
 
@@ -139,9 +205,9 @@
                                 <img src="../img/user3.svg" alt="Foto redonda da Laura Dias, mulher branca com cabelo castanho claro, fundo cinza azulado." 
                                 class=" w-10 h-10 rounded-full object-cover" />
                             </div>
-                            <p id="article4-title" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
+                            <a href="#" class="flex-1 font-semibold text-base leading-tight line-clamp-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas lectus...
-                            </p>
+                            </a>
                         </header>
                         <section>
                             <p class="italic font-semibold mb-2">Abstract:</p>
@@ -152,21 +218,31 @@
                             </p>
                         </section>
                         <footer class="flex justify-between mt-6 text-slate-500" aria-label="Ações do artigo">
-                            <button aria-label="Curtir artigo" class="rounded-full p-1">
-                                <img src="../img/like.svg" alt="">
+                            <label class="group inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/like.svg" class="w-5 h-5 mr-1 peer-checked:hidden" alt="Likes">
+                                <img src="../img/like_fill.svg" class="hidden w-5 h-5 mr-1 peer-checked:inline" alt="Likes">
+                                <p>123</p>
+                            </label>
+                            <button aria-label="Comentários do artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/comment.svg" alt="comentar">
+                                <p>23</p>
                             </button>
-                            <button aria-label="Comentários do artigo" class="rounded-full p-1">
-                                <img src="../img/comment.svg" alt="">
+                            <button aria-label="Compartilhar artigo" class="flex items-center gap-2 rounded-full p-1">
+                                <img src="../img/share.svg" alt="compartilhar">
+                                <p>55</p>
                             </button>
-                            <button aria-label="Compartilhar artigo" class="rounded-full p-1">
-                                <img src="../img/share.svg" alt="">
-                            </button>
-                            <button aria-label="Salvar artigo" class="rounded-full p-1">
-                                <img src="../img/save.svg" alt="">
-                            </button>
+                            <label class="cursor-pointer inline-flex items-center">
+                                <input type="checkbox" class="peer hidden" />
+                                <img src="../img/save.svg" alt="Salvar artigo" class="peer-checked:hidden" />
+                                <img src="../img/save_fill.svg" alt="Artigo salvo" class="hidden peer-checked:inline" />
+                                <p>123</p>
+                            </label>
                         </footer>
                     </article>
+             
 
+                    
         </main>
         
                      <aside aria-label="Informações do usuário e ações"
