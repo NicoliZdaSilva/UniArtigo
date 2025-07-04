@@ -13,78 +13,6 @@
 
       <main class="flex flex-1 flex-col bg-white p-8">
         <div class="flex-1 overflow-y-auto">
-          <header class="flex flex-col items-center md:flex-row">
-            <img
-              src="../img/user8.svg"
-              alt="Foto de perfil"
-              class="mb-4 h-36 w-36 rounded-full object-cover md:mb-0 md:ml-8"
-            />
-
-            <div class="flex-1 md:ml-8">
-              <div
-                class="flex w-full flex-col md:flex-row md:items-center md:justify-between"
-              >
-                <div>
-                  <h1 class="text-4xl font-bold text-gray-800">João Carlos</h1>
-                  <p class="text-md mt-1 text-gray-500">Cargo</p>
-                  <p class="text-md font-bold text-gray-600">
-                    Universidade em Rio do Sul, Santa Catarina
-                  </p>
-                </div>
-                <div class="flex w-full flex-wrap justify-end gap-4 md:w-auto">
-                  <button
-                    class="group flex h-10 w-36 items-center justify-center rounded-lg border border-[#6A8B97] bg-[#6A8B97]/20 text-sm font-semibold text-[#6A8B97] hover:border-[#CCCCCC] hover:bg-[#6A8B97] hover:text-white"
-                  >
-                    <span>Editar perfil</span>
-                    <img
-                      src="../img/person_edit_blue.svg"
-                      alt="caixa de mensagem"
-                      class="ml-2 h-5 w-5 group-hover:hidden"
-                    />
-
-                    <img
-                      src="../img/person_edit.svg"
-                      alt="caixa de mensagem branca"
-                      class="ml-2 hidden h-5 w-5 group-hover:inline"
-                    />
-                  </button>
-
-                  <button
-                    class="group flex h-10 w-36 items-center justify-center rounded-lg border border-[#6A8B97] bg-[#6A8B97]/20 text-sm font-semibold text-[#6A8B97] hover:border-[#CCCCCC] hover:bg-[#6A8B97] hover:text-white"
-                  >
-                    <span>Configurações</span>
-                    <img
-                      src="../img/settings_blue.svg"
-                      alt="Configurações (Azul)"
-                      class="ml-2 h-5 w-5 group-hover:hidden"
-                    />
-                    <img
-                      src="../img/settings.svg"
-                      alt="Configurações"
-                      class="ml-2 hidden h-5 w-5 group-hover:inline"
-                    />
-                  </button>
-                </div>
-              </div>
-
-              <div class="mt-6 flex justify-end">
-                <div class="w-fit">
-                  <button
-                    type="button"
-                    class="flex items-center gap-1 rounded-full border border-[#CCCCCC] bg-[#6A8B97] px-7 py-1 text-sm font-normal text-white"
-                    aria-label="Botão com 10 artigos"
-                  >
-                    <span class="font-semibold">10</span>
-
-                    <span>Artigos</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </header>
-
-          <hr class="my-8 border-gray-200" />
-
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <article
               class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
@@ -168,7 +96,7 @@
                     <img src="../img/share.svg" alt="Compartilhar artigo" />
                   </button>
                   <button class="text-gray-400 hover:text-gray-600">
-                    <img src="../img/save.svg" alt="Salvar artigo" />
+                    <img src="../img/article-save.svg" alt="Salvar artigo" />
                   </button>
                 </div>
               </footer>
@@ -212,7 +140,7 @@
                     <img src="../img/share.svg" alt="Compartilhar artigo" />
                   </button>
                   <button class="text-gray-400 hover:text-gray-600">
-                    <img src="../img/save.svg" alt="Salvar artigo" />
+                    <img src="../img/article-save.svg" alt="Salvar artigo" />
                   </button>
                 </div>
               </footer>
@@ -256,7 +184,95 @@
                     <img src="../img/share.svg" alt="Compartilhar artigo" />
                   </button>
                   <button class="text-gray-400 hover:text-gray-600">
-                    <img src="../img/save.svg" alt="Salvar artigo" />
+                    <img src="../img/article-save.svg" alt="Salvar artigo" />
+                  </button>
+                </div>
+              </footer>
+            </article>
+
+            <article
+              class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+            >
+              <div class="flex-grow p-5">
+                <h3 class="text-lg font-bold text-gray-800">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h3>
+                <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+                  Vivamus egestas lectus eget tempor faucibus. Quisque non
+                  felis...
+                </p>
+              </div>
+
+              <footer
+                class="flex items-center justify-between border-gray-200 bg-gray-50 px-5 py-3"
+              >
+                <div class="flex items-center -space-x-2">
+                  <img
+                    src="../img/user1.svg"
+                    alt="autor 1"
+                    class="h-6 w-6 rounded-full border-2 border-white"
+                  />
+                  <img
+                    src="../img/user2.svg"
+                    alt="autor 2"
+                    class="h-6 w-6 rounded-full border-2 border-white"
+                  />
+                  <img
+                    src="../img/user3.svg"
+                    alt="autor 3"
+                    class="h-6 w-6 rounded-full border-2 border-white"
+                  />
+                </div>
+                <div class="flex items-center space-x-4">
+                  <button class="text-gray-400 hover:text-gray-600">
+                    <img src="../img/share.svg" alt="Compartilhar artigo" />
+                  </button>
+                  <button class="text-gray-400 hover:text-gray-600">
+                    <img src="../img/article-save.svg" alt="Salvar artigo" />
+                  </button>
+                </div>
+              </footer>
+            </article>
+
+            <article
+              class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+            >
+              <div class="flex-grow p-5">
+                <h3 class="text-lg font-bold text-gray-800">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h3>
+                <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+                  Vivamus egestas lectus eget tempor faucibus. Quisque non
+                  felis...
+                </p>
+              </div>
+
+              <footer
+                class="flex items-center justify-between border-gray-200 bg-gray-50 px-5 py-3"
+              >
+                <div class="flex items-center -space-x-2">
+                  <img
+                    src="../img/user1.svg"
+                    alt="autor 1"
+                    class="h-6 w-6 rounded-full border-2 border-white"
+                  />
+                  <img
+                    src="../img/user2.svg"
+                    alt="autor 2"
+                    class="h-6 w-6 rounded-full border-2 border-white"
+                  />
+                  <img
+                    src="../img/user3.svg"
+                    alt="autor 3"
+                    class="h-6 w-6 rounded-full border-2 border-white"
+                  />
+                </div>
+                <div class="flex items-center space-x-4">
+                  <button class="text-gray-400 hover:text-gray-600">
+                    <img src="../img/share.svg" alt="Compartilhar artigo" />
+                  </button>
+                  <button class="text-gray-400 hover:text-gray-600">
+                    <img src="../img/article-save.svg" alt="Salvar artigo" />
                   </button>
                 </div>
               </footer>
