@@ -1,40 +1,41 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
 .container {
-  width: 31% !important;
+  width: 32% !important;
   height: auto;
   flex-direction: column;
-  gap: 5px; 
+  gap: 5px;
   justify-content: left;
   align-items: left;
   flex-wrap: initial;
 }
 
-.texto{
+.texto {
   width: 60%;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-h1{
+h1 {
   padding-top: 10%;
-  font-size: 30px!important;
+  font-size: 30px !important;
   padding-bottom: 5%;
 }
 
-h2{
-  font-size: 20px!important;
+h2 {
+  font-size: 20px !important;
   padding-bottom: 10%;
 }
- /* container fixa tudo no canto direito-embaixo */
+/* container fixa tudo no canto direito-embaixo */
 .background-shapes {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 50%;     /* ajusta à sua necessidade */
+  width: 50%; /* ajusta à sua necessidade */
   height: auto;
   pointer-events: none;
 }
@@ -51,7 +52,7 @@ h2{
 /* a verde (fundo1.png) fica atrás */
 .background-shapes .shape-1 {
   z-index: 0;
-  width: 50%;;
+  width: 50%;
 }
 
 /* a branca (fundo2.png) sobrepõe */
@@ -61,10 +62,10 @@ h2{
 }
 .heading {
   display: flex;
-  align-items: center;   /* centra verticalmente texto + imagem */
-  gap: 0.5rem;           /* espaço entre texto e imagem */
+  align-items: center; /* centra verticalmente texto + imagem */
+  gap: 0.5rem; /* espaço entre texto e imagem */
   padding-top: 20%;
-  font-size: 30px!important;
+  font-size: 30px !important;
   padding-bottom: 7%;
 }
 
@@ -76,11 +77,11 @@ h2{
 .box {
   /* deixa o tamanho automático, com largura máxima */
   max-width: 768px;
-  margin: 10px;     /* mt-10 mx-auto */
+  margin: 10px; /* mt-10 mx-auto */
   border-radius: 30px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-color: white;
-  margin-bottom: 500px;;
+  margin-bottom: 200px;
 }
 
 /* se ainda precisar de algum ajuste extra no grid de imagens */
@@ -90,4 +91,16 @@ h2{
   }
 }
 
-
+.box-login {
+  max-width: 500px;
+  margin-left: 10%;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin-bottom: 200px;
+  margin-top: 5%;
+}
+.container1 {
+  width: 50% !important;
+  height: auto;
+}

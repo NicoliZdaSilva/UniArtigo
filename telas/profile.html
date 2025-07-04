@@ -1,120 +1,356 @@
-<!DOCTYPE html>
-<html lang="pt-br" class="h-full bg-gray-100">
-<head>
-  <meta charset="UTF-8" />
-  <title>Perfil UniArtigo</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="h-full flex">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniArtigo</title>
 
-  <!-- Sidebar -->
-  <aside class="w-60 bg-[#4A6A78] text-white flex flex-col justify-between min-h-screen">
-    <div>
-      <img src="img/UniArtigo.svg" alt="UniArtigo Logo" class="w-32 mx-auto my-6">
-      <div class="px-4 mb-4">
-        <input type="text" placeholder="Pesquisar" class="w-full px-3 py-2 rounded text-gray-700">
-      </div>
-      <nav class="flex flex-col gap-3 px-4">
-        <a href="#" class="flex items-center gap-3">
-          <img src="img/home.svg" class="w-5 h-5"> Início
-        </a>
-        <a href="#" class="flex items-center gap-3">
-          <img src="img/message.svg" class="w-5 h-5"> Mensagens
-        </a>
-        <a href="#" class="flex items-center gap-3">
-          <img src="img/notifications.svg" class="w-5 h-5"> Notificações
-        </a>
-        <a href="#" class="flex items-center gap-3">
-          <img src="img/save.svg" class="w-5 h-5"> Salvos
-        </a>
-        <a href="#" class="flex items-center gap-3">
-          <img src="img/person.svg" class="w-5 h-5"> Meu Perfil
-        </a>
-      </nav>
-    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex h-screen">
+      <div id="sidebar-container"></div>
 
-    <div class="p-4">
-      <button class="w-full flex items-center justify-center gap-2 px-4 py-2 rounded bg-[#4A6A78] border border-white">
-        <img src="img/add.svg" class="w-4 h-4"> Publicar Novo
-      </button>
-      <a href="#" class="flex items-center gap-2 text-red-600 mt-6">
-        <img src="img/logout.svg" class="w-4 h-4"> Sair
-      </a>
-      <p class="text-[10px] text-gray-300 mt-2">Desenvolvido por New System ®</p>
-    </div>
-  </aside>
+      <main class="flex-1 bg-white p-8">
+        <header class="flex items-center">
+          <img
+            src="../img/user8.svg"
+            alt="Foto de perfil"
+            class="h-36 w-36 rounded-full object-cover"
+          />
 
-  <!-- Main Content -->
-  <main class="flex-1 p-8">
-    <!-- Perfil -->
-    <div class="flex items-center justify-between mb-8">
-      <div class="flex items-center gap-6">
-        <img src="img/user1.svg" alt="Foto de perfil" class="w-24 h-24 rounded-full">
-        <div>
-          <h1 class="text-xl font-bold">João Carlos</h1>
-          <p class="text-gray-600 text-sm">Cargo</p>
-          <p class="text-gray-500 text-sm">Universidade em Rio do Sul, Santa Catarina</p>
+          <div class="ml-8 flex-1">
+            <div class="flex items-center justify-between">
+              <div>
+                <h1 class="text-4xl font-bold text-gray-800">João Carlos</h1>
+                <p class="text-md mt-1 text-gray-500">Cargo</p>
+                <p class="text-md font-bold text-gray-600">
+                  Universidade em Rio do Sul, Santa Catarina
+                </p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <button
+                  class="group flex h-10 w-36 items-center justify-center rounded-lg border border-[#6A8B97] bg-[#6A8B97]/20 text-sm font-semibold text-[#6A8B97] hover:border-[#CCCCCC] hover:bg-[#6A8B97] hover:text-white"
+                >
+                  <span>Editar perfil</span>
+                  <img
+                    src="../img/person_edit_blue.svg"
+                    alt="caixa de mensagem"
+                    class="ml-2 h-5 w-5 group-hover:hidden"
+                  />
+
+                  <img
+                    src="../img/person_edit.svg"
+                    alt="caixa de mensagem branca"
+                    class="ml-2 hidden h-5 w-5 group-hover:inline"
+                  />
+                </button>
+
+                <button
+                  class="group flex h-10 w-36 items-center justify-center rounded-lg border border-[#6A8B97] bg-[#6A8B97]/20 text-sm font-semibold text-[#6A8B97] hover:border-[#CCCCCC] hover:bg-[#6A8B97] hover:text-white"
+                >
+                  <span>Configurações</span>
+                  <img
+                    src="../img/settings_blue.svg"
+                    alt="Configurações (Azul)"
+                    class="ml-2 h-5 w-5 group-hover:hidden"
+                  />
+                  <img
+                    src="../img/settings.svg"
+                    alt="Configurações"
+                    class="ml-2 hidden h-5 w-5 group-hover:inline"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-6 flex justify-end">
+              <div class="w-fit">
+                <button
+                  type="button"
+                  class="flex items-center gap-1 rounded-full border border-[#6A8B97] bg-[#6A8B97]/20 px-7 py-1 text-sm font-normal text-[#6A8B97]"
+                  aria-label="Botão com 10 artigos"
+                >
+                  <span class="font-semibold">10</span>
+
+                  <span>Artigos</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <hr class="my-8 border-gray-200" />
+        <!--Linha de divisão header/grid de artigos-->
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article
+            class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+          >
+            <div class="flex-grow p-5">
+              <h3 class="text-lg font-bold text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+                Vivamus egestas lectus eget tempor faucibus. Quisque non
+                felis...
+              </p>
+            </div>
+
+            <footer
+              class="flex items-center justify-between border-gray-200 bg-gray-50 px-5 py-3"
+            >
+              <div class="flex items-center -space-x-2">
+                <img
+                  src="../img/user1.svg"
+                  alt="autor 1"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user2.svg"
+                  alt="autor 2"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user3.svg"
+                  alt="autor 3"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+              </div>
+              <div class="flex items-center space-x-4">
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/share.svg" alt="Compartilhar artigo" />
+                </button>
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/save.svg" alt="Salvar artigo" />
+                </button>
+              </div>
+            </footer>
+          </article>
+
+          <article
+            class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+          >
+            <div class="flex-grow p-5">
+              <h3 class="text-lg font-bold text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+                Vivamus egestas lectus eget tempor faucibus. Quisque non
+                felis...
+              </p>
+            </div>
+
+            <footer
+              class="flex items-center justify-between border-gray-200 bg-gray-50 px-5 py-3"
+            >
+              <div class="flex items-center -space-x-2">
+                <img
+                  src="../img/user1.svg"
+                  alt="autor 1"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user2.svg"
+                  alt="autor 2"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user3.svg"
+                  alt="autor 3"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+              </div>
+              <div class="flex items-center space-x-4">
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/share.svg" alt="Compartilhar artigo" />
+                </button>
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/save.svg" alt="Salvar artigo" />
+                </button>
+              </div>
+            </footer>
+          </article>
+
+          <article
+            class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+          >
+            <div class="flex-grow p-5">
+              <h3 class="text-lg font-bold text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+                Vivamus egestas lectus eget tempor faucibus. Quisque non
+                felis...
+              </p>
+            </div>
+
+            <footer
+              class="flex items-center justify-between border-gray-200 bg-gray-50 px-5 py-3"
+            >
+              <div class="flex items-center -space-x-2">
+                <img
+                  src="../img/user1.svg"
+                  alt="autor 1"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user2.svg"
+                  alt="autor 2"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user3.svg"
+                  alt="autor 3"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+              </div>
+              <div class="flex items-center space-x-4">
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/share.svg" alt="Compartilhar artigo" />
+                </button>
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/save.svg" alt="Salvar artigo" />
+                </button>
+              </div>
+            </footer>
+          </article>
+
+          <article
+            class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+          >
+            <div class="flex-grow p-5">
+              <h3 class="text-lg font-bold text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+                Vivamus egestas lectus eget tempor faucibus. Quisque non
+                felis...
+              </p>
+            </div>
+
+            <footer
+              class="flex items-center justify-between border-gray-200 bg-gray-50 px-5 py-3"
+            >
+              <div class="flex items-center -space-x-2">
+                <img
+                  src="../img/user1.svg"
+                  alt="autor 1"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user2.svg"
+                  alt="autor 2"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user3.svg"
+                  alt="autor 3"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+              </div>
+              <div class="flex items-center space-x-4">
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/share.svg" alt="Compartilhar artigo" />
+                </button>
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/save.svg" alt="Salvar artigo" />
+                </button>
+              </div>
+            </footer>
+          </article>
+
+          <article
+            class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+          >
+            <div class="flex-grow p-5">
+              <h3 class="text-lg font-bold text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+                Vivamus egestas lectus eget tempor faucibus. Quisque non
+                felis...
+              </p>
+            </div>
+
+            <footer
+              class="flex items-center justify-between border-gray-200 bg-gray-50 px-5 py-3"
+            >
+              <div class="flex items-center -space-x-2">
+                <img
+                  src="../img/user1.svg"
+                  alt="autor 1"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user2.svg"
+                  alt="autor 2"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user3.svg"
+                  alt="autor 3"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+              </div>
+              <div class="flex items-center space-x-4">
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/share.svg" alt="Compartilhar artigo" />
+                </button>
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/save.svg" alt="Salvar artigo" />
+                </button>
+              </div>
+            </footer>
+          </article>
+
+          <article
+            class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+          >
+            <div class="flex-grow p-5">
+              <h3 class="text-lg font-bold text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+                Vivamus egestas lectus eget tempor faucibus. Quisque non
+                felis...
+              </p>
+            </div>
+
+            <footer
+              class="flex items-center justify-between border-gray-200 bg-gray-50 px-5 py-3"
+            >
+              <div class="flex items-center -space-x-2">
+                <img
+                  src="../img/user1.svg"
+                  alt="autor 1"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user2.svg"
+                  alt="autor 2"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+                <img
+                  src="../img/user3.svg"
+                  alt="autor 3"
+                  class="h-6 w-6 rounded-full border-2 border-white"
+                />
+              </div>
+              <div class="flex items-center space-x-4">
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/share.svg" alt="Compartilhar artigo" />
+                </button>
+                <button class="text-gray-400 hover:text-gray-600">
+                  <img src="../img/save.svg" alt="Salvar artigo" />
+                </button>
+              </div>
+            </footer>
+          </article>
         </div>
-      </div>
-      <div class="flex items-center gap-4">
-        <button class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded">
-          Editar Perfil <img src="img/edit.svg" class="w-4 h-4">
-        </button>
-        <button class="flex items-center gap-2 bg-gray-200 text-gray-700 px-4 py-2 rounded">
-          Configurações <img src="img/settings.svg" class="w-4 h-4">
-        </button>
-        <span class="bg-gray-200 px-4 py-1 rounded-full text-gray-600 text-sm">10 Artigos</span>
-      </div>
+      </main>
     </div>
 
-    <!-- Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded shadow">
-        <p class="font-semibold mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas lectus...</p>
-        <footer class="flex items-center justify-between">
-          <div class="flex -space-x-2">
-            <img src="img/user2.svg" class="w-8 h-8 rounded-full border-2 border-white">
-            <img src="img/user3.svg" class="w-8 h-8 rounded-full border-2 border-white">
-          </div>
-          <div class="flex items-center gap-4">
-            <button><img src="img/share.svg" class="w-4 h-4"></button>
-            <button><img src="img/save.svg" class="w-4 h-4"></button>
-          </div>
-        </footer>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded shadow">
-        <p class="font-semibold mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas lectus...</p>
-        <footer class="flex items-center justify-between">
-          <div class="flex -space-x-2">
-            <img src="img/user2.svg" class="w-8 h-8 rounded-full border-2 border-white">
-            <img src="img/user3.svg" class="w-8 h-8 rounded-full border-2 border-white">
-          </div>
-          <div class="flex items-center gap-4">
-            <button><img src="img/share.svg" class="w-4 h-4"></button>
-            <button><img src="img/save.svg" class="w-4 h-4"></button>
-          </div>
-        </footer>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded shadow">
-        <p class="font-semibold mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas lectus...</p>
-        <footer class="flex items-center justify-between">
-          <div class="flex -space-x-2">
-            <img src="img/user2.svg" class="w-8 h-8 rounded-full border-2 border-white">
-            <img src="img/user3.svg" class="w-8 h-8 rounded-full border-2 border-white">
-          </div>
-          <div class="flex items-center gap-4">
-            <button><img src="img/share.svg" class="w-4 h-4"></button>
-            <button><img src="img/save.svg" class="w-4 h-4"></button>
-          </div>
-        </footer>
-      </div>
-
-    </div>
-
-  </main>
-</body>
+    <script src="../js/app.js"></script>
+  </body>
 </html>
