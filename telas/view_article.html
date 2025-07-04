@@ -21,7 +21,9 @@
                 </h1>
 
                 <header class="bg-gray-50 border-b border-gray-200">
-                    <div class="max-w-5xl mx-auto flex items-center justify-between p-4 px-8">
+
+                    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between p-4 px-8">
+                  
                         <div class="flex items-center">
                             <img src="../img/user6.svg" alt="Foto de Dr. Eleanor Vance" class="w-10 h-10 rounded-full mr-3">
                             <div>
@@ -29,24 +31,27 @@
                                 <p class="text-sm text-gray-500">Publicado em 22/03/2017</p>
                             </div>
                         </div>
+
+                        <!--interações-->
                         <div class="flex items-center space-x-5 text-gray-500">
                             <label class="group inline-flex items-center cursor-pointer">
                                 <input type="checkbox" class="peer hidden" />
-                                <img src="../img/like.svg" class="w-5 h-5 mr-1 peer-checked:hidden" alt="Likes">
-                                <img src="../img/like_fill.svg" class="hidden w-5 h-5 mr-1 peer-checked:inline" alt="Likes">
-                                <p>123</p>
+                                <img src="../img/like.svg" class="w-3 h-3 md:w-5 md:h-5 mr-1 peer-checked:hidden" alt="Likes">
+                                <img src="../img/like_fill.svg" class="hidden w-3 h-3 md:w-5 md:h-5 mr-1 peer-checked:inline" alt="Likes">
+                                <p class="text-xs md:text-base">123</p>
                             </label>
-                            <button class="group flex items-center">
-                                <img src="../img/comment.svg" class="w-5 h-5 mr-1" alt="Comentários"> 45
+                            <button class="group flex items-center text-xs md:text-base">
+                                <img src="../img/comment.svg" class="w-3 h-3 md:w-5 md:h-5 mr-1" alt="Comentários"> 45
                             </button>
-                            <button class="group flex items-center">
-                                <img src="../img/share.svg" class="w-5 h-5 mr-1" alt="Compartilhamentos"> 3
+                            <button class="group flex items-center text-xs md:text-base">
+                                <img src="../img/share.svg" class="w-3 h-3 md:w-5 md:h-5 mr-1" alt="Compartilhamentos"> 3
                             </button>
-                            <button class="group flex items-center">
-                                <img src="../img/download.svg" class="w-5 h-5 mr-1" alt="Downloads"> 3
+                            <button class="group flex items-center text-xs md:text-base">
+                                <img src="../img/download.svg" class="w-3 h-3 md:w-5 md:h-5 mr-1" alt="Downloads"> 3
                             </button>
                         </div>
                     </div>
+
                 </header>
 
                 <div class="prose max-w-none pt-8 px-8">
