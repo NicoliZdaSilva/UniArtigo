@@ -73,3 +73,21 @@ h2{
   height: auto;
   border-radius: 8px;
 }
+.box {
+  /* deixa o tamanho automático, com largura máxima */
+  max-width: 768px;
+  margin: 10px;     /* mt-10 mx-auto */
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: white;
+  margin-bottom: 500px;;
+}
+
+/* se ainda precisar de algum ajuste extra no grid de imagens */
+@media (min-width: 1024px) {
+  .grid {
+    padding-left: 0; /* já usamos pr-8 no HTML */
+  }
+}
+
+

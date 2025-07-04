@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniArtigo – Acessar Conta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="font-sans min-h-screen bg-gray-50 flex flex-col">
+
+    <div class="main-content flex flex-col lg:flex-row items-start justify-between gap-8 px-6 lg:px-20 py-10 flex-1">
+
+      <!-- coluna das imagens -->
+      <div class="container w-full lg:w-1/2 flex flex-col items-center space-y-8">
+        <img src="../img/alunos.png"
+             alt="Estudantes andando"
+             class="rounded-lg shadow-lg w-full object-cover"/>
+        <img src="../img/UniartigoNome.png"
+             alt="Logo UniArtigo"
+             class="rounded-lg shadow-lg w-2/3 object-contain"/>
+        <img src="../img/estudante.png"
+             alt="Aluna sorrindo"
+             class="rounded-lg shadow-lg w-full object-cover"/>
+      </div>
+
+      <!-- coluna do formulário -->
+      <div class="box w-full lg:w-1/2 bg-white p-8 rounded-3xl shadow-lg">
+        <h2 class="text-2xl font-semibold mb-6">Acessar Conta</h2>
+        <p class="mb-6 text-gray-600">Bem-vindo! Por favor, faça login para continuar.</p>
+        <form class="space-y-6">
+          <div>
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              placeholder="Senha"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600"
+            />
+          </div>
+          <div class="flex justify-between items-center">
+            <a href="#" class="text-sm text-teal-600 hover:underline">Esqueceu a senha?</a>
+          </div>
+          <div class="flex justify-end pt-4">
+            <button
+              type="submit"
+              class="px-6 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700"
+            >
+              Entrar
+            </button>
+          </div>
+          <div class="text-center text-sm text-gray-500">
+            Ainda não tem conta?
+            <a href="cadastro.html" class="text-teal-600 hover:underline">Cadastre-se</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- shapes de fundo -->
+    <div class="background-shapes">
+      <img src="../img/fundo1.png" class="shape-1" alt="">
+      <img src="../img/fundo2.png" class="shape-2" alt="">
+    </div>
+
+  </body>
+</html>
