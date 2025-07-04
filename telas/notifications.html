@@ -2,7 +2,7 @@
 <html lang="pt-br" class="h-full bg-gray-100">
   <head>
     <meta charset="UTF-8" />
-    <title>Notificações UniArtigo</title>
+    <title> UniArtigo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <style>
@@ -13,121 +13,13 @@
   </head>
   <body class="flex h-full bg-[#FFFEFE]">
     <!-- Sidebar -->
-    <aside
-      class="fixed left-0 top-0 flex h-screen w-64 flex-col justify-between bg-[#F2F2F2] text-black"
-    >
-      <div>
-        <div class="flex h-20 items-center justify-center bg-[#6A8B97]">
-          <img src="../img/UniArtigo.svg" alt="UniArtigo Logo" class="h-9" />
-        </div>
-        <div class="mt-[35px] px-4">
-          <div class="relative">
-            <input
-              type="text"
-              placeholder="Pesquisar"
-              class="w-full rounded-lg border border-[#DBDBDB] bg-[#F5F5F5] py-3 pl-10 pr-3 text-[#6A8B97] placeholder-[#6A8B97] focus:outline-none focus:ring-0"
-            />
-            <img
-              src="../../img/search.svg"
-              alt="Pesquisar"
-              class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2"
-            />
-          </div>
-        </div>
-        <nav class="mt-[35px] px-4">
-          <ul>
-            <li>
-              <a
-                href="#"
-                class="flex items-center text-black hover:text-[#6A8B97]"
-              >
-                <img src="../img/home.svg" alt="" class="mr-3 h-5 w-5" />
-                Início
-              </a>
-            </li>
-            <li class="mt-5">
-              <a
-                href="#"
-                class="flex items-center text-black hover:text-[#6A8B97]"
-              >
-                <img src="../img/message.svg" alt="" class="mr-3 h-5 w-5" />
-                Mensagens
-              </a>
-            </li>
-            <li class="mt-5">
-              <a
-                href="#"
-                class="flex items-center text-[#6A8B97] hover:text-[#6A8B97]"
-              >
-                <img
-                  src="../img/notifications.svg"
-                  alt=""
-                  class="mr-3 h-5 w-5"
-                />
-                Notificações
-              </a>
-            </li>
-            <li class="mt-5">
-              <a
-                href="#"
-                class="flex items-center text-black hover:text-[#6A8B97]"
-              >
-                <img src="../img/save.svg" alt="" class="mr-3 h-5 w-5" />
-                Salvos
-              </a>
-            </li>
-            <li class="mt-5">
-              <a
-                href="#"
-                class="flex items-center text-black hover:text-[#6A8B97]"
-              >
-                <img src="../img/person.svg" alt="" class="mr-3 h-5 w-5" />
-                Meu Perfil
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <div class="mt-5 px-4">
-          <button
-            type="button"
-            class="group flex h-14 w-full items-center justify-center rounded-2xl border border-[#6A8B97] bg-[#6A8B97]/20 px-4 text-[#6A8B97] hover:border-[#CCCCCC] hover:bg-[#6A8B97] hover:text-white"
-          >
-            <img
-              src="../img/add_blue.svg"
-              alt="Adicionar"
-              class="mr-2 h-5 w-5 group-hover:hidden"
-            />
-            <img
-              src="../img/add.svg"
-              alt="Adicionar (azul)"
-              class="mr-2 hidden h-5 w-5 group-hover:inline"
-            />
-            <span>Publicar Novo</span>
-          </button>
-        </div>
-        <hr class="mt-5 border-t border-[#CCCCCC]" />
-        <div class="px-4 pb-4">
-          <a
-            href="#"
-            class="mt-4 flex items-center text-black hover:text-[#6A8B97]"
-          >
-            <img src="../img/logout.svg" alt="" class="mr-2 h-5 w-5" />
-            Sair
-          </a>
-          <p class="mt-4 text-center text-xs text-gray-500">
-            Desenvolvido por New System ®
-          </p>
-        </div>
-      </div>
-    </aside>
+    <div id="sidebar-container"></div>
 
     <!-- Main Content -->
     <main class="ml-64 flex-1 px-6 py-8">
-      <div>
+      
         <!-- Container: 3 columns (344px each), gap 24px (gap-6), side margins 24px (mx-6) -->
-        <div class="flex flex-wrap justify-between gap-x-6 gap-y-6">
+        <div class="flex flex-wrap justify-center gap-6">
           <!-- Coluna: Novos Seguidores -->
           <div class="w-[344px]">
             <h3 class="font-sans text-[30px] font-bold text-[#6A8B97]">
@@ -985,7 +877,9 @@
             </div>
           </div>
         </div>
-      </div>
     </main>
+
+    <script src="../js/app.js"></script>
+    
   </body>
 </html>
