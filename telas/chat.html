@@ -29,45 +29,12 @@
       ::-webkit-scrollbar-thumb:hover { background: #a3aab2; }
     </style>
 </head>
-<body class="h-screen overflow-hidden">
+<body class="flex h-full">
 
-  <aside class="fixed left-0 top-0 flex h-screen w-64 flex-shrink-0 flex-col justify-between bg-[#F2F2F2] text-black">
-    <div>
-      <div class="flex h-20 items-center justify-center bg-[#6A8B97]">
-        <img src="../img/UniArtigo.svg" alt="UniArtigo Logo" class="h-9" />
-      </div>
-      <div class="mt-[35px] px-4">
-        <div class="relative">
-          <input type="text" placeholder="Pesquisar conversas" class="w-full rounded-lg border border-[#DBDBDB] bg-[#F5F5F5] py-3 pl-10 pr-3 text-[#6A8B97] placeholder-[#6A8B97] focus:outline-none focus:ring-0"/>
-          <img src="../img/search.svg" alt="Pesquisar" class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2"/>
-        </div>
-      </div>
-      <nav class="mt-[35px] space-y-5 px-4">
-        <a href="#" class="flex items-center text-black hover:text-[#6A8B97]"><img src="../img/home.svg" alt="Início" class="mr-3 h-5 w-5" /> Início</a>
-        <a href="#" class="flex items-center font-bold text-[#6A8B97]"><img src="../img/message.svg" alt="Mensagens" class="mr-3 h-5 w-5" /> Mensagens</a>
-        <a href="#" class="flex items-center text-black hover:text-[#6A8B97]"><img src="../img/notifications.svg" alt="Notificações" class="mr-3 h-5 w-5" /> Notificações</a>
-        <a href="#" class="flex items-center text-black hover:text-[#6A8B97]"><img src="../img/save.svg" alt="Artigos Salvos" class="mr-3 h-5 w-5" /> Artigos Salvos</a>
-        <a href="#" class="flex items-center text-black hover:text-[#6A8B97]"><img src="../img/person.svg" alt="Meu Perfil" class="mr-3 h-5 w-5" /> Meu Perfil</a>
-      </nav>
-    </div>
-    <div>
-      <div class="mt-5 px-4">
-        <button type="button" class="group flex h-14 w-full items-center justify-center rounded-2xl border border-[#6A8B97] bg-[#6A8B97]/20 px-4 text-[#6A8B97] transition hover:border-[#6A8B97] hover:bg-[#6A8B97] hover:text-white">
-          <img src="../img/add_blue.svg" alt="Adicionar" class="mr-2 h-5 w-5 group-hover:hidden"/>
-          <img src="../img/add.svg" alt="Adicionar (Branco)" class="mr-2 hidden h-5 w-5 group-hover:inline"/>
-          <span>Publicar Artigo</span>
-        </button>
-      </div>
-      <hr class="mt-5 border-t border-[#CCCCCC]" />
-      <div class="px-4 py-4">
-        <a href="#" class="flex items-center text-black hover:text-[#6A8B97]"><img src="../img/logout.svg" alt="Sair" class="mr-2 h-5 w-5" /> Sair</a>
-        <p class="mt-4 text-center text-xs text-gray-500">Desenvolvido por New System ®</p>
-      </div>
-    </div>
-  </aside>
+  <div id="sidebar-container"></div>
 
-  <div class="flex-1 p-5 pl-64">
-    <main class="h-full w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-lg">
+  <main class="flex-1 p-5">
+    <div class="h-full w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-lg">
       <div class="flex h-full flex-col">
         <div class="flex h-20 flex-shrink-0 items-center justify-between border-b border-gray-200 p-4"><h2 class="text-xl font-bold text-gray-800">Conversas</h2><a href="#" class="font-semibold text-custom-chat">NOVA +</a></div>
         <div class="flex-1 overflow-y-auto">
@@ -76,12 +43,14 @@
           <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user3.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Carlos Silva</span><span class="text-xs text-gray-400">Revisado</span></div><p class="truncate text-sm text-gray-600">Dúvida esclarecida, muito obrigado!</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">Ontem</span></div></div>
           <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user4.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Equipe Editorial</span><span class="text-xs text-yellow-600">Aguardando</span></div><p class="truncate text-sm text-gray-600">Você: Alguma novidade sobre a revisão do artigo?</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">2 d</span><img src="../img/play-icon.svg" alt="play" class="mt-1 h-5 w-5 opacity-60" /></div></div>
           <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user5.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Juliana Moreira</span><span class="text-xs text-gray-400">Revisado</span></div><p class="truncate text-sm text-gray-600">Perfeito, tudo certo então.</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">3 d</span></div></div>
-           <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user1.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Suporte Técnico</span><span class="text-xs text-yellow-600">Aguardando</span></div><p class="truncate text-sm text-gray-600">Estamos verificando um erro no upload.</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">3 d</span><img src="../img/play-icon.svg" alt="play" class="mt-1 h-5 w-5 opacity-60" /></div></div>
+          <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user1.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Suporte Técnico</span><span class="text-xs text-yellow-600">Aguardando</span></div><p class="truncate text-sm text-gray-600">Estamos verificando um erro no upload.</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">3 d</span><img src="../img/play-icon.svg" alt="play" class="mt-1 h-5 w-5 opacity-60" /></div></div>
           <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user6.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Conselho Editorial</span><span class="text-xs text-gray-400">Publicado</span></div><p class="truncate text-sm text-gray-600">Artigo aprovado para publicação!</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">4 d</span></div></div>
           <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user7.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Ricardo Alves</span><span class="text-xs text-gray-400">Finalizado</span></div><p class="truncate text-sm text-gray-600">Combinado. Até mais.</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">4 d</span></div></div>
         </div>
       </div>
     </main>
   </div>
+
+  <script src="../js/app.js"></script>
 </body>
 </html>
