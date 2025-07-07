@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" class="h-full bg-gray-100">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mensagens - UniArtigo</title>
+    <title>UniArtigo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/styles.css" />
     <script>
@@ -11,46 +11,80 @@
         theme: {
           extend: {
             colors: {
-              'custom-chat': '#6A8B97',
-              'custom-chat-dark': '#5E7D92'
-            }
-          }
-        }
-      }
+              "custom-chat": "#6A8B97",
+              "custom-chat-dark": "#5E7D92",
+            },
+          },
+        },
+      };
     </script>
     <style>
       body {
-        font-family: 'Inter', sans-serif;
-        background-color: #F0F2F5;
+        font-family: "Inter", sans-serif;
+        background-color: #f0f2f5;
       }
-      ::-webkit-scrollbar { width: 6px; }
-      ::-webkit-scrollbar-track { background: #f1f1f1; }
-      ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
-      ::-webkit-scrollbar-thumb:hover { background: #a3aab2; }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d1d5db;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a3aab2;
+      }
     </style>
-</head>
-<body class="flex h-full">
+  </head>
+  <body class="flex h-full">
+    <div id="sidebar-container"></div>
 
-  <div id="sidebar-container"></div>
-
-  <main class="flex-1 p-5">
-    <div class="h-full w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-lg">
-      <div class="flex h-full flex-col">
-        <div class="flex h-20 flex-shrink-0 items-center justify-between border-b border-gray-200 p-4"><h2 class="text-xl font-bold text-gray-800">Conversas</h2><a href="#" class="font-semibold text-custom-chat">NOVA +</a></div>
-        <div class="flex-1 overflow-y-auto">
-          
-          <a href="chat_ativo.html">
-            <div class="flex cursor-pointer items-start gap-4 border-l-4 border-custom-chat bg-gray-50/50 p-4"><img class="h-12 w-12 rounded-full" src="../img/user1.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Suporte Editorial</span><span class="text-xs text-green-600">Disponível</span></div><p class="text-sm text-gray-600">Ok, estamos analisando a sua submissão.</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">14:32</span><span class="mt-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">1</span></div></div>
-          </a>
-
-          <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user2.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Ana Costa</span><span class="text-xs text-yellow-600">Aguardando</span></div><p class="truncate text-sm text-gray-600">Obrigada! Fico no aguardo de um retorno.</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">11:15</span><img src="../img/play-icon.svg" alt="play" class="mt-1 h-5 w-5 opacity-60" /></div></div>
-          <div class="flex cursor-pointer items-start gap-4 p-4 hover:bg-gray-50"><img class="h-12 w-12 rounded-full" src="../img/user3.svg" alt="Avatar"/><div class="flex-1"><div class="flex items-baseline justify-between"><span class="font-bold">Carlos Silva</span><span class="text-xs text-gray-400">Revisado</span></div><p class="truncate text-sm text-gray-600">Dúvida esclarecida, muito obrigado!</p></div><div class="flex flex-col items-end"><span class="text-xs text-gray-500">Ontem</span></div></div>
-          
+    <main class="flex-1 p-5">
+      <div
+        class="h-full w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-lg"
+      >
+        <div class="flex h-full flex-col">
+          <div
+            class="flex h-20 flex-shrink-0 items-center justify-between border-b border-gray-200 p-4"
+          >
+            <h2 class="text-xl font-bold text-gray-800">Conversas</h2>
+            <a href="#" class="text-custom-chat font-semibold">NOVA +</a>
+          </div>
+          <div class="flex-1 overflow-y-auto">
+            <a href="chat_ativo.html">
+              <div
+                class="border-custom-chat flex cursor-pointer items-start gap-4 border-l-4 bg-gray-50/50 p-4"
+              >
+                <img
+                  class="h-12 w-12 rounded-full"
+                  src="../img/user1.svg"
+                  alt="Avatar"
+                />
+                <div class="flex-1">
+                  <div class="flex items-baseline justify-between">
+                    <span class="font-bold">Suporte Editorial</span
+                    ><span class="text-xs text-green-600">Disponível</span>
+                  </div>
+                  <p class="text-sm text-gray-600">
+                    Ok, estamos analisando a sua submissão.
+                  </p>
+                </div>
+                <div class="flex flex-col items-end">
+                  <span class="text-xs text-gray-500">14:32</span
+                  ><span
+                    class="mt-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white"
+                    >1</span
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <script src="../js/app.js"></script>
-</body>
+    <script src="../js/app.js"></script>
+  </body>
 </html>

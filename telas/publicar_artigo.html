@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" class="h-full bg-gray-100">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publicar Artigo - UniArtigo</title>
@@ -8,35 +8,60 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <style>
       body {
-        font-family: 'Inter', sans-serif;
-        background-color: #F0F2F5;
+        font-family: "Inter", sans-serif;
+        background-color: #f0f2f5;
       }
       #sidebar-container aside {
         transition: transform 0.3s ease-in-out;
       }
     </style>
-</head>
-<body class="flex h-screen">
+  </head>
+  <body class="flex h-screen">
+    <div id="sidebar-container" class="hidden lg:flex"></div>
 
-  <div id="sidebar-container" class="hidden lg:flex"></div>
-
-  <div class="flex flex-1 flex-col">
-    <header class="flex h-16 items-center justify-between bg-white px-4 shadow-md lg:hidden">
-        <a href="#"><img src="../img/UniArtigo_dark.svg" alt="UniArtigo Logo" class="h-8" /></a>
+    <div class="flex flex-1 flex-col">
+      <header
+        class="flex h-16 items-center justify-between bg-white px-4 shadow-md lg:hidden"
+      >
+        <a href="#"
+          ><img
+            src="../img/UniArtigo_dark.svg"
+            alt="UniArtigo Logo"
+            class="h-8"
+        /></a>
         <button id="menu-button" class="p-2">
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
         </button>
-    </header>
+      </header>
 
-    <main class="flex-1 flex flex-col p-6">
-        <h1 class="flex-shrink-0 text-2xl font-bold text-gray-800 md:text-3xl">Publicar Artigo</h1>
-    
-        <div class="mt-4 flex-1 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+      <main class="flex flex-1 flex-col p-6">
+        <h1 class="flex-shrink-0 text-2xl font-bold text-gray-800 md:text-3xl">
+          Publicar Artigo
+        </h1>
+
+        <div
+          class="mt-4 flex-1 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+        >
           <div class="flex h-full flex-col p-6">
             <div class="flex-shrink-0">
-              <label for="titulo" class="block text-sm font-medium text-gray-700">Título</label>
+              <label
+                for="titulo"
+                class="block text-sm font-medium text-gray-700"
+                >Título</label
+              >
               <input
                 type="text"
                 name="titulo"
@@ -45,20 +70,26 @@
                 value="The Impact of Artificial Intelligence on Education"
               />
             </div>
-    
+
             <div class="mt-4 flex flex-1 flex-col">
-              <label for="conteudo" class="block text-sm font-medium text-gray-700">Texto</label>
+              <label
+                for="conteudo"
+                class="block text-sm font-medium text-gray-700"
+                >Texto</label
+              >
               <textarea
                 name="conteudo"
                 id="conteudo"
                 class="mt-1 block w-full flex-1 resize-none rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              >Abstract
+              >
+Abstract
 This paper explores the transformative impact of artificial intelligence (AI) on the education sector. It examines how AI technologies, such as machine learning and natural language processing, are being integrated into various aspects of education, from personalized learning experiences to automated administrative tasks. The study analyzes the benefits and challenges of AI adoption, including ethical considerations and the need for workforce adaptation. Through case studies and empirical evidence, the paper demonstrates the potential of AI to enhance teaching effectiveness, improve student outcomes, and create more equitable access to quality education.
     
 Article Body
-The integration of AI in education is revolutionizing traditional teaching and learning paradigms. AI-powered tools can analyze student performance data to tailor learning paths, providing customized content and feedback. For instance, adaptive learning platforms adjust the difficulty of exercises based on individual student progress, ensuring optimal challenge and engagement. AI tutors offer personalized support, answering questions and providing explanations in real-time, mimicking the interaction with a human instructor. Furthermore, AI is automating administrative tasks, such as grading and scheduling, freeing up educators' time to a more dynamic and effective learning environment.</textarea>
+The integration of AI in education is revolutionizing traditional teaching and learning paradigms. AI-powered tools can analyze student performance data to tailor learning paths, providing customized content and feedback. For instance, adaptive learning platforms adjust the difficulty of exercises based on individual student progress, ensuring optimal challenge and engagement. AI tutors offer personalized support, answering questions and providing explanations in real-time, mimicking the interaction with a human instructor. Furthermore, AI is automating administrative tasks, such as grading and scheduling, freeing up educators' time to a more dynamic and effective learning environment.</textarea
+              >
             </div>
-            
+
             <div class="flex flex-shrink-0 justify-end pt-4">
               <a
                 href="publicar_artigo_confirmacao.html"
@@ -71,8 +102,8 @@ The integration of AI in education is revolutionizing traditional teaching and l
           </div>
         </div>
       </main>
-  </div>
+    </div>
 
-  <script src="../js/app.js"></script>
-</body>
+    <script src="../js/app.js"></script>
+  </body>
 </html>
